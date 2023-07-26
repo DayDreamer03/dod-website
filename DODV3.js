@@ -69,58 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateTitleOpacity);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const imageLoopSection = document.querySelector(".image-loop-section");
-  const centeredSquare = document.querySelector(".centered-square");
-
-  const imageUrls = [
-    "/img/mccourt.png",
-    "/img/starck.png",
-    "/img/azoulai.jpeg",
-    // Add more image URLs as needed
-  ];
-
-  let currentIndex = 0;
-
-  function changeImage() {
-    centeredSquare.style.backgroundImage = `url(${imageUrls[currentIndex]})`;
-    currentIndex = (currentIndex + 1) % imageUrls.length;
-  }
-
-  // Call changeImage function every 2 seconds
-  setInterval(changeImage, 2000);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const myHeading = document.getElementById(".positionfixed");
-  const pageFooter = document.querySelector(".footer");
-
-  function checkFooterVisibility() {
-    const footerRect = pageFooter.getBoundingClientRect();
-    if (footerRect.top <= window.innerHeight) {
-      myHeading.style.position = "relative";
-    } else {
-      myHeading.style.position = "fixed";
-    }
-  }
-
-  // Call checkFooterVisibility function on initial load
-  checkFooterVisibility();
-
-  // Add a scroll event listener to check the visibility of the footer
-  window.addEventListener("scroll", checkFooterVisibility);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const imageContainer = document.querySelector(".image-container");
-  const hiddenImages = document.querySelectorAll(".hidden-image");
-  const listItems = imageContainer.querySelectorAll("li");
+document.addEventListener('DOMContentLoaded', function () {
+  const imageContainer = document.querySelector('.image-container');
+  const hiddenImages = document.querySelectorAll('.hidden-image');
+  const listItems = imageContainer.querySelectorAll('li');
   let loopInterval;
 
   // Function to hide all images
   function hideAllImages() {
     for (const image of hiddenImages) {
-      image.style.display = "none";
+      image.style.display = 'none';
     }
   }
 
@@ -130,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showNextImage() {
       hideAllImages();
-      hiddenImages[currentIndex].style.display = "inline-block";
+      hiddenImages[currentIndex].style.display = 'inline-block';
       currentIndex = (currentIndex + 1) % hiddenImages.length;
     }
 
@@ -138,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hideAllImages();
 
     // Show the images in a loop with a delay of 3 seconds between each image
-    loopInterval = setInterval(showNextImage, 2500); // 3000 milliseconds (3 seconds) delay between images
+    loopInterval = setInterval(showNextImage, 3000); // 3000 milliseconds (3 seconds) delay between images
   }
 
   // Animation for screens above 500px (hover)
@@ -153,12 +111,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Attach event listeners to each list item (li) for hover
     for (let i = 0; i < listItems.length; i++) {
-      listItems[i].addEventListener("mouseover", function () {
+      listItems[i].addEventListener('mouseover', function () {
         hideAllImages();
-        hiddenImages[i].style.display = "inline-block";
+        hiddenImages[i].style.display = 'inline-block';
       });
 
-      listItems[i].addEventListener("mouseout", function () {
+      listItems[i].addEventListener('mouseout', function () {
         hideAllImages();
       });
     }
@@ -175,6 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Call handleScreenSize on initial load and window resize
-  window.addEventListener("resize", handleScreenSize);
+  window.addEventListener('resize', handleScreenSize);
   handleScreenSize();
 });
