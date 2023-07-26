@@ -112,26 +112,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const imageContainer = document.querySelector(".image-container");
   const hiddenImages = document.querySelectorAll(".hidden-image");
-  let currentIndex = 0;
+  const listItems = imageContainer.querySelectorAll("li");
+  let loopInterval;
 
-  function showNextImage() {
-    hiddenImages[currentIndex].style.display = "inline-block";
-    currentIndex = (currentIndex + 1) % hiddenImages.length;
-  }
-
+  // Function to hide all images
   function hideAllImages() {
     for (const image of hiddenImages) {
       image.style.display = "none";
     }
   }
 
-  // Hide all images initially
-  hideAllImages();
+  // Animation for screens under 500px (loop)
+  function animationForSmallScreens() {
+    let currentIndex = 0;
 
-  // Show the images in a loop with a delay of 3 seconds between each image
-  setInterval(function () {
+    function showNextImage() {
+      hideAllImages();
+      hiddenImages[currentIndex].style.display = "inline-block";
+      currentIndex = (currentIndex + 1) % hiddenImages.length;
+    }
+
+    // Hide all images initially
     hideAllImages();
-    showNextImage();
-  }, 3000); // 3000 milliseconds (3 seconds) delay between images
+
+    // Show the images in a loop with a delay of 3 seconds between each image
+    loopInterval = setInterval(showNextImage, 2500); // 3000 milliseconds (3 seconds) delay between images
+  }
+
+  // Animation for screens above 500px (hover)
+  function animationForLargeScreens() {
+    // Clear the loop interval if it exists
+    if (loopInterval) {
+      clearInterval(loopInterval);
+    }
+
+    // Hide all images initially
+    hideAllImages();
+
+    // Attach event listeners to each list item (li) for hover
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].addEventListener("mouseover", function () {
+        hideAllImages();
+        hiddenImages[i].style.display = "inline-block";
+      });
+
+      listItems[i].addEventListener("mouseout", function () {
+        hideAllImages();
+      });
+    }
+  }
+
+  // Determine the screen size and run the appropriate animation
+  function handleScreenSize() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 500) {
+      animationForSmallScreens(); // Run loop animation for small screens
+    } else {
+      animationForLargeScreens(); // Run hover animation for large screens
+    }
+  }
+
+  // Call handleScreenSize on initial load and window resize
+  window.addEventListener("resize", handleScreenSize);
+  handleScreenSize();
 });
