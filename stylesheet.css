@@ -541,7 +541,7 @@ DESKTOP SIZES
   }
 
   .hovering ul li img {
-    visibility: hiden;
+    visibility: hidden;
   }
 
   .hovering ul li:hover img {
