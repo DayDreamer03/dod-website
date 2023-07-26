@@ -210,6 +210,10 @@ h3 {
     padding-bottom: 5px;
   }
 
+  .hovering ul li img {
+    visibility: hiden;
+  }
+
   /* MAIL */
 
   #mail {
@@ -539,7 +543,7 @@ DESKTOP SIZES
     padding-bottom: 5px;
   }
 
-  /* .hovering ul li img {
+  .hovering ul li img {
     visibility: hiden;
   }
 
