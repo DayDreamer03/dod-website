@@ -539,6 +539,18 @@ DESKTOP SIZES
     padding-bottom: 5px;
   }
 
+  /* .hovering ul li img {
+    visibility: hiden;
+  }
+
+  .hovering ul li:hover img {
+    visibility: visible;
+  }
+
+  .hovering ul li:hover span {
+    opacity: 0.5;
+  } 
+
   /* MAIL */
 
   #mail {
