@@ -175,7 +175,7 @@ h3 {
 
   .row {
     display: grid;
-    grid-template-columns: 78.5% 20%;
+    grid-template-columns: 80% 20%;
   }
 
   .row h3 {
@@ -192,8 +192,14 @@ h3 {
     width: 100%;
   }
 
-  .hidden-image {
+  .episodes img {
     display: none;
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+    position: absolute;
+    right: 5%;
+    margin-top: -10%;
   }
 
   ul {
@@ -544,7 +550,7 @@ DESKTOP SIZES
 
   .hovering ul li:hover span {
     opacity: 0.5;
-  } 
+  }
 
   /* MAIL */
 
