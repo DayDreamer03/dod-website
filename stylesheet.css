@@ -193,7 +193,7 @@ h3 {
   }
 
   .episodes img {
-    diplay: none;
+    visibility: hidden;
     width: 7em;
     height: 7em;
     object-fit: cover;
@@ -209,10 +209,6 @@ h3 {
   li {
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-
-  .hovering ul li img {
-    visibility: hidden;
   }
 
   /* MAIL */
