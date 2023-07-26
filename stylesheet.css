@@ -193,7 +193,7 @@ h3 {
   }
 
   .episodes img {
-    visibility: hidden;
+    display: none;
     width: 7em;
     height: 7em;
     object-fit: cover;
