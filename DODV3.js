@@ -68,3 +68,45 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a scroll event listener to update the title's opacity on scroll
   window.addEventListener("scroll", updateTitleOpacity);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const imageLoopSection = document.querySelector(".image-loop-section");
+  const centeredSquare = document.querySelector(".centered-square");
+
+  const imageUrls = [
+    "/img/mccourt.png",
+    "/img/starck.png",
+    "/img/azoulai.jpeg",
+    // Add more image URLs as needed
+  ];
+
+  let currentIndex = 0;
+
+  function changeImage() {
+    centeredSquare.style.backgroundImage = `url(${imageUrls[currentIndex]})`;
+    currentIndex = (currentIndex + 1) % imageUrls.length;
+  }
+
+  // Call changeImage function every 2 seconds
+  setInterval(changeImage, 2000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const myHeading = document.getElementById(".positionfixed");
+  const pageFooter = document.querySelector(".footer");
+
+  function checkFooterVisibility() {
+    const footerRect = pageFooter.getBoundingClientRect();
+    if (footerRect.top <= window.innerHeight) {
+      myHeading.style.position = "relative";
+    } else {
+      myHeading.style.position = "fixed";
+    }
+  }
+
+  // Call checkFooterVisibility function on initial load
+  checkFooterVisibility();
+
+  // Add a scroll event listener to check the visibility of the footer
+  window.addEventListener("scroll", checkFooterVisibility);
+});
