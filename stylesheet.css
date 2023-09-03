@@ -668,102 +668,6 @@ SMALL PHONES
     font-size: 1.55rem;
     color: rgb(0, 0, 0);
   }
-
-  /* PRIVACY POLICY */
-
-  .privacy {
-    background: var(--clr-dark);
-  }
-
-  .privacy h2 {
-    font-weight: var(--fw-reg);
-  }
-
-  .data-paragraph {
-    text-align: center;
-    vertical-align: center;
-    padding-top: 5em;
-    padding-bottom: 0;
-    color: white;
-  }
-
-  .maintitle2 {
-    color: #fff;
-  }
-
-  .privacy_text {
-    text-align: justify;
-    text-align-last: center;
-  }
-
-  .privacy_lines {
-    background-color: black;
-    padding: 0;
-  }
-
-  .line3 {
-    height: 45px;
-    background-image: repeating-linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      transparent 2px,
-      transparent 10px
-    );
-  }
-
-  .line4 {
-    height: 35px;
-    background-image: repeating-linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      transparent 1px,
-      transparent 9px
-    );
-    bottom: -1px;
-    left: 4px;
-  }
-
-  /* SPLASH SCREEN */
-
-  .splash {
-    cursor: none;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background: rgb(255, 255, 255);
-    text-align: center;
-    opacity: 1;
-    z-index: 200;
-  }
-
-  .splash.hidden {
-    opacity: 0;
-    z-index: -10;
-    transition: all ease-in-out 1.75s;
-  }
-
-  .splash-header {
-    color: var(--clr-dark);
-    font-size: var(--fs-h3);
-    font-weight: var(--fw-reg);
-    margin-top: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em;
-    text-align: center;
-    text-align-last: center;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  .fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-  }
 }
 
 /* 
@@ -772,7 +676,7 @@ DESKTOP SIZES
     
 */
 
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
   html {
     overscroll-behavior: none;
   }
