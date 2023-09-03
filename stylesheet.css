@@ -300,7 +300,6 @@ h3 {
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
-    background: rgba(255, 255, 255, 0.3);
     bottom: 0px;
     height: 6.75em;
     width: 100%;
@@ -638,7 +637,6 @@ SMALL PHONES
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
-    background: rgba(255, 255, 255, 0.3);
     bottom: 0px;
     height: 5.9em;
     width: 100%;
@@ -901,7 +899,6 @@ DESKTOP SIZES
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
-    background: rgba(255, 255, 255, 0.3);
     bottom: 0px;
     height: 6.75em;
     width: 100%;
