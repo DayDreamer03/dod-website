@@ -1095,7 +1095,12 @@ DESKTOP SIZES
   align-items: center;
 }
 
-.splash3.hidden .splash2.hidden {
+.splash3.hidden {
+  opacity: 0;
+  z-index: -20;
+}
+
+.splash2.hidden {
   opacity: 0;
   z-index: -20;
 }
