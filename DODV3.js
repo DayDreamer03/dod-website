@@ -90,13 +90,3 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkFooterVisibility);
 });
 
-TweenMax.staggerFrom(
-  ".container > .block",
-  2,
-  {
-    y: "110%",
-    ease: Expo.easeInOut,
-    delay: 1,
-  },
-  0.4
-);
