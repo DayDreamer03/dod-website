@@ -147,4 +147,18 @@
     </footer>
 
   <script src="DODV3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+    TweenMax.staggerFrom(
+      ".container > .block",
+      2,
+      {
+        y: "110%",
+        ease: Expo.easeInOut,
+        delay: 1,
+      },
+      0.4
+    );
+  </script>
 </html>
