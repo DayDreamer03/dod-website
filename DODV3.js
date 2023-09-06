@@ -6,42 +6,21 @@ document.addEventListener("DOMContentLoaded", (e) =>
   }, 5000)
 );
 
-var words = document.getElementsByClassName("word");
-var currentWord = 0;
+const splashScreen2 = document.querySelector(".splash2");
 
-function showNextWord() {
-  words[currentWord].style.opacity = 0; // Hide the current word
-  currentWord++;
+document.addEventListener("DOMContentLoaded", (e) =>
+  setTimeout(() => {
+    splashScreen2.classList.add("hidden");
+  }, 6000)
+);
 
-  if (currentWord >= words.length) {
-    currentWord = 0;
-  }
+const splashScreen3 = document.querySelector(".splash3");
 
-  words[currentWord].style.opacity = 1; // Show the next word
-  setTimeout(showNextWord, 888);
-}
-
-for (var i = 0; i < words.length; i++) {
-  words[i].style.opacity = 0; // Set the initial opacity of each word to 0
-}
-
-setTimeout(function () {
-  words[currentWord].style.opacity = 1;
-  // Show the first word after a delay
-  setTimeout(showNextWord);
-}, 444);
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add("fade-out");
-    }
-  });
-});
-
-const fadingElements = document.querySelectorAll(".fade-out");
-fadingElements.forEach((el) => observer.observe(el));
+document.addEventListener("DOMContentLoaded", (e) =>
+  setTimeout(() => {
+    splashScreen3.classList.add("hidden");
+  }, 3500)
+);
 
 document.addEventListener("DOMContentLoaded", function () {
   const mainTitle = document.getElementById("mainTitle");
