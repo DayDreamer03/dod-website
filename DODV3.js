@@ -89,3 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a scroll event listener to check the visibility of the footer
   window.addEventListener("scroll", checkFooterVisibility);
 });
+
+TweenMax.staggerFrom(
+  ".container > .block",
+  2,
+  {
+    y: "110%",
+    ease: Expo.easeInOut,
+    delay: 1,
+  },
+  0.4
+);
