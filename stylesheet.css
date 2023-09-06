@@ -1025,56 +1025,77 @@ DESKTOP SIZES
   }
 }
 
-/* PRIVACY POLICY
 
-.privacy {
-  background: var(--clr-dark);
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.privacy h2 {
-  font-weight: var(--fw-reg);
+.block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
-.data-paragraph {
-  text-align: center;
-  vertical-align: center;
-  padding-top: 5em;
-  padding-bottom: 0;
-  color: white;
+.b-1 {
+  background: url("/img/azoulai.jpeg") 50% 50% no-repeat;
+  background-size: cover;
+  width: 9em;
+  height: 9em;
+  object-fit: cover;
 }
 
-.maintitle2 {
-  color: #fff;
+.b-2 {
+  background: url("/img/starck.png") 50% 50% no-repeat;
+  background-size: cover;
+  width: 9em;
+  height: 9em;
+  object-fit: cover;
 }
 
-.privacy_text {
-  text-align: justify;
-  text-align-last: center;
+.b-3 {
+  background: url("/img/mccourt.png") 50% 50% no-repeat;
+  background-size: cover;
+  width: 9em;
+  height: 9em;
+  object-fit: cover;
+  position: absolute;
 }
 
-.privacy_lines {
-  background-color: black;
-  padding: 0;
+.overlay {
+  position: absolute;
+  transform: translateY(100%);
+  width: 10em;
+  height: 10em;
+  background: #ffffff;
 }
 
-.line3 {
-  height: 45px;
-  background-image: repeating-linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    transparent 2px,
-    transparent 10px
-  );
+.splash2 {
+  height: 100vh;
+  width: 100vw;
+  cursor: none;
+  opacity: 1;
+  z-index: 250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.line4 {
-  height: 35px;
-  background-image: repeating-linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    transparent 1px,
-    transparent 9px
-  );
-  bottom: -1px;
-  left: 4px;
-} */
+.splash3 {
+  height: 100vh;
+  width: 100vw;
+  cursor: none;
+  opacity: 1;
+  z-index: 350;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash3.hidden .splash2.hidden {
+  opacity: 0;
+  z-index: -20;
+}
