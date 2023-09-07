@@ -99,8 +99,6 @@ h3 {
 
 @media screen and (max-width: 500px) {
   html {
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
     overscroll-behavior: none;
   }
 
@@ -435,8 +433,6 @@ SMALL PHONES
 
 @media screen and (max-width: 377px) {
   html {
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
     overscroll-behavior: none;
   }
 
