@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const imageUrls = [
     "/img/azoulai.jpeg",
-    "/img/mccourt.png",
     "/img/starck.png",
     // Add more image URLs as needed
   ];
