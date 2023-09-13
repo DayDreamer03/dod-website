@@ -704,8 +704,8 @@ DESKTOP SIZES
   }
 
   .centered-square {
-    width: 12em;
-    height: 12em;
+    width: 15em;
+    height: 15em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
