@@ -130,8 +130,8 @@ h3 {
   }
 
   .centered-square {
-    width: 9em;
-    height: 9em;
+    width: 12em;
+    height: 12em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
@@ -464,8 +464,8 @@ SMALL PHONES
   }
 
   .centered-square {
-    width: 9em;
-    height: 9em;
+    width: 12em;
+    height: 12em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
@@ -704,8 +704,8 @@ DESKTOP SIZES
   }
 
   .centered-square {
-    width: 9em;
-    height: 9em;
+    width: 12em;
+    height: 12em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
