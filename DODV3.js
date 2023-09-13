@@ -53,8 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const centeredSquare = document.querySelector(".centered-square");
 
   const imageUrls = [
-    "/img/azoulai.jpeg",
-    "/img/starck.png",
+    "DOD-icon.png"
     // Add more image URLs as needed
   ];
 
