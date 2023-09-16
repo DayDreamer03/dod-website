@@ -130,8 +130,8 @@ h3 {
   }
 
   .centered-square {
-    width: 12em;
-    height: 12em;
+    width: 14em;
+    height: 14em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
@@ -465,8 +465,8 @@ SMALL PHONES
   }
 
   .centered-square {
-    width: 12em;
-    height: 12em;
+    width: 14em;
+    height: 14em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
@@ -706,8 +706,8 @@ DESKTOP SIZES
   }
 
   .centered-square {
-    width: 15em;
-    height: 15em;
+    width: 18em;
+    height: 18em;
     background-size: cover; /* Added to cover the square with the image */
     background-position: center; /* Added to center the image */
   }
@@ -828,7 +828,7 @@ DESKTOP SIZES
     background: var(--clr-dark);
     scroll-snap-align: start;
     z-index: 10;
-    height: 110vh;
+    height: 107vh;
     bottom: 0;
   }
 
@@ -893,13 +893,13 @@ DESKTOP SIZES
     width: 8.5%;
     right: 50%;
     transform: translateX(50%);
-    bottom: 7.75em;
+    bottom: 7.65em;
   }
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0px;
-    height: 7.75em;
+    height: 7.65em;
     width: 100%;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
