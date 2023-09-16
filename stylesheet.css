@@ -629,13 +629,13 @@ SMALL PHONES
     border-top: 1px solid rgb(0, 0, 0);
     width: 30%;
     right: 35%;
-    bottom: 6.75em;
+    bottom: 6.5em;
   }
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0px;
-    height: 6.75em;
+    height: 6.5em;
     width: 100%;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
@@ -892,13 +892,13 @@ DESKTOP SIZES
     width: 8.5%;
     right: 50%;
     transform: translateX(50%);
-    bottom: 6.75em;
+    bottom: 7.25em;
   }
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0px;
-    height: 6.75em;
+    height: 7.25em;
     width: 100%;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
