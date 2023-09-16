@@ -829,6 +829,7 @@ DESKTOP SIZES
     scroll-snap-align: start;
     z-index: 10;
     height: 100vh;
+    bottom: 0;
   }
 
   .infoot {
