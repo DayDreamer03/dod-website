@@ -893,13 +893,13 @@ DESKTOP SIZES
     width: 8.5%;
     right: 50%;
     transform: translateX(50%);
-    bottom: 7.25em;
+    bottom: 7.5em;
   }
 
   .glass {
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0px;
-    height: 7.25em;
+    height: 7.5em;
     width: 100%;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
