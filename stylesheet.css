@@ -747,13 +747,12 @@ DESKTOP SIZES
   /* EPISODES */
 
   .episodes {
-    scroll-snap-align: start;
     position: relative;
     z-index: -10;
     padding: 8em;
-    padding-bottom: 0;
-    padding-top: 2em;
-    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 12em;
+    height: 100%;
   }
 
   .row {
