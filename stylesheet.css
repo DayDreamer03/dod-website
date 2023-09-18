@@ -1103,3 +1103,46 @@ DESKTOP SIZES
   opacity: 0;
   z-index: -20;
 }
+
+form {
+  background: #000000;
+  display: flex;
+  width: fit-content;
+}
+
+form input {
+  margin-top: 10px;
+  border: 0;
+  outline: none;
+  font-size: var(--fs-h3);
+  font-family: var(--ff-secondary);
+  height: 40px;
+  width: 14.4em;
+  background: #000000;
+}
+
+form button {
+  margin-top: 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+  width: 3.5em;
+  background: #000000;
+}
+
+form img {
+  height: 20px;
+  margin-bottom: -20%;
+  margin-left: -70px;
+}
+
+.underline {
+  border-top: 1px solid rgb(208, 208, 208);
+  width: 100%;
+  margin-top: 0;
+  line-height: 10%;
+}
+
+#sys {
+  font-size: var(--fs-h3);
+}
