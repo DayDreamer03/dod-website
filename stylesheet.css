@@ -751,6 +751,7 @@ DESKTOP SIZES
     position: relative;
     z-index: -10;
     padding: 8em;
+    padding-bottom: 0;
     padding-top: 2em;
     height: 100vh;
   }
