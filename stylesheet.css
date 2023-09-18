@@ -212,9 +212,13 @@ h3 {
   /* MAIL */
 
   #mail {
-    padding: 2em;
+    padding-top: 0;
     font-size: var(--fs-h2);
+    text-align: center;
     width: 9em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #mail a {
@@ -547,10 +551,13 @@ SMALL PHONES
   /* MAIL */
 
   #mail {
-    padding: 2em;
-    margin-top: -1.25em;
+    padding-top: 0;
     font-size: var(--fs-h2);
+    text-align: center;
     width: 9em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #mail a {
@@ -810,9 +817,13 @@ DESKTOP SIZES
   /* MAIL */
 
   #mail {
-    padding: 2em;
+    padding-top: 0;
     font-size: var(--fs-h2);
+    text-align: center;
     width: 9em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #mail a {
