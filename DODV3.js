@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const centeredSquare = document.querySelector(".centered-square");
 
   const imageUrls = [
+    "/img/B3.jpeg",
     "/img/B1.jpeg",
     "/img/B2.jpeg",
-    "/img/B3.jpeg",
     // Add more image URLs as needed
   ];
 
