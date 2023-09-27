@@ -11,7 +11,7 @@ const splashScreen2 = document.querySelector(".splash2");
 document.addEventListener("DOMContentLoaded", (e) =>
   setTimeout(() => {
     splashScreen2.classList.add("hidden");
-  }, 3500)
+  }, 4000)
 );
 
 const splashScreen3 = document.querySelector(".splash3");
