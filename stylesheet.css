@@ -400,7 +400,7 @@ h3 {
     z-index: 200;
   }
 
-  .splash.hidden {
+  .splash1.hidden {
     opacity: 0;
     z-index: -10;
     transition: all ease-in-out 1.75s;
@@ -1005,7 +1005,7 @@ DESKTOP SIZES
     z-index: 200;
   }
 
-  .splash.hidden {
+  .splash1.hidden {
     opacity: 0;
     z-index: -10;
     transition: all ease-in-out 1.75s;
